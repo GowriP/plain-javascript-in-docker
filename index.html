@@ -1,7 +1,33 @@
 ﻿<!doctype html>
 <html>
+	<head>
+    <title>Add 2 numbers </title>
+    <script>
+     function addnumbers() {
+      var number1 = document.getElementById("Text1").value;
+	    var number2 = document.getElementById("Text2").value;
+	    var result = parseInt(number1) + parseInt(number2) ;
+	    console.log(result);
+	    var res = document.getElementById("txtresult");
+	    res.value = result;
+      };
   
+  </script>
+	</head>
   <body>
-           <h1>Home</h1>
+  <div>
+  <label>Enter First Number:</label>
+  <input id="Text1">
+  </div>
+  <div>
+  <label>Enter Second Number:</label>
+  <input id="Text2">
+  </div>
+  <div>
+  <label>Result :</label>
+  <input id="txtresult">
+  </div>
+  <button name="clickbtn" onclick="addnumbers()">Display Result</button>
   </body>
+  
 </html>
